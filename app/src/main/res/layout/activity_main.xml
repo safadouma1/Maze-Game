@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menu principal -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/maze_wallpaper" />
+
+    <!-- Voile pour améliorer la lisibilité -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66FBE3B8" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        app:cardBackgroundColor="@color/cream_card"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                style="@style/Maze.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Word Maze" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="Find the exit. Spell words on the way."
+                android:textColor="@color/brown_muted"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/play_button"
+                style="@style/Maze.Button"
+                android:text="▶  Play" />
+
+            <Button
+                android:id="@+id/list_of_words_button"
+                style="@style/Maze.Button.Outline"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:text="List of words" />
+
+            <Button
+                android:id="@+id/game_rules_button"
+                style="@style/Maze.Button.Outline"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:text="Game rules" />
+
+            <TextView
+                android:id="@+id/music_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:text="♪ Music: on"
+                android:textColor="@color/brown"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
