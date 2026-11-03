@@ -1,4 +1,4 @@
-# 🧩 Word Maze — Jeu Labyrinthe de Mots
+#  Word Maze — Jeu Labyrinthe de Mots
 
 > Mini-projet d'algorithmique — application Android (Java)
 
@@ -30,7 +30,7 @@ l'**algorithme de Dijkstra**.
 
 ---
 
-## ✨ Fonctionnalités
+##  Fonctionnalités
 
 - Labyrinthe **parfait** (un seul chemin entre deux cases) généré à chaque manche.
 - **3 niveaux de difficulté** : Easy, Medium, Hard.
@@ -40,12 +40,12 @@ l'**algorithme de Dijkstra**.
 - **Chronomètre** de 60 s (Medium / Hard).
 - **Obstacles mobiles** qui se déplacent dans les couloirs (Hard).
 - **Score**, **meilleur score sauvegardé** par niveau, compteur de déplacements.
-- 🎵 **Musique de fond** en boucle (activable / désactivable depuis le menu) et **effets sonores**.
+-  **Musique de fond** en boucle (activable / désactivable depuis le menu) et **effets sonores**.
 - Interface soignée : plateau arrondi, joueur animé, sortie pulsante, chemin en pointillés animés.
 
 ---
 
-## 📸 Captures d'écran
+##  Captures d'écran
 
 ### 1. Menu principal
 <p align="center">
@@ -121,7 +121,7 @@ l'**algorithme de Dijkstra**.
 
 ---
 
-## 🎵 Musique et sons
+##  Musique et sons
 
 Le jeu contient de l'audio (fichiers dans `app/src/main/res/raw/`) :
 
@@ -136,7 +136,7 @@ Le jeu contient de l'audio (fichiers dans `app/src/main/res/raw/`) :
 
 ---
 
-## 📜 Règles du jeu
+##  Règles du jeu
 
 ### Règles générales
 | Action | Points |
@@ -168,7 +168,7 @@ Le jeu contient de l'audio (fichiers dans `app/src/main/res/raw/`) :
 
 ---
 
-## 🎮 Commandes
+##  Commandes
 
 | Geste / bouton | Effet |
 |---|---|
@@ -186,7 +186,7 @@ pointillés orange = plus court chemin.
 
 ---
 
-## 🧠 Algorithmes utilisés
+##  Algorithmes utilisés
 
 ### 1. Génération du labyrinthe — *Recursive Backtracking* (DFS itératif)
 Fichier : `GameViews.java` → `createMaze()`, `getNeighbour()`, `removeWall()`
@@ -227,7 +227,7 @@ Les autres cases reçoivent des lettres aléatoires, pondérées selon leur fré
 
 ---
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 Maze-Game-Projet-algo-main/
@@ -245,7 +245,7 @@ Maze-Game-Projet-algo-main/
         │   ├── MainActivity.java     # Menu principal + musique de fond
         │   ├── Difficulty.java       # Choix du niveau
         │   ├── GameView.java         # Écran de jeu : HUD, boutons, pause/reprise
-        │   ├── GameViews.java        # ⭐ Logique du jeu + dessin du labyrinthe
+        │   ├── GameViews.java        #  Logique du jeu + dessin du labyrinthe
         │   ├── GameRules.java        # Écran des règles
         │   └── ListOfWords.java      # Écran de la liste des mots
         └── res/
@@ -253,7 +253,7 @@ Maze-Game-Projet-algo-main/
             ├── values/               # Couleurs, textes (règles), thème et styles
             ├── drawable/             # Fonds, formes arrondies, images
             └── raw/
-                ├── dictionary.txt    # ⭐ Mots à collecter (un par ligne)
+                ├── dictionary.txt    #  Mots à collecter (un par ligne)
                 ├── bakcground_music.mp3
                 ├── victory.mp3
                 └── word_found.mp3
@@ -276,7 +276,7 @@ Maze-Game-Projet-algo-main/
 
 ---
 
-## 🛠 Installation et lancement
+##  Installation et lancement
 
 ### Prérequis
 - **Android Studio** Giraffe (2022.3) ou plus récent — https://developer.android.com/studio
@@ -310,7 +310,7 @@ Pour créer un émulateur : **Tools › Device Manager › Create Device** → P
 
 ---
 
-## 📱 Lancer sur un téléphone Android
+##  Lancer sur un téléphone Android
 
 Le jeu fonctionne sur tout téléphone avec le système d'exploitation **Android 7.0 ou plus récent**.
 
@@ -322,7 +322,7 @@ Le jeu fonctionne sur tout téléphone avec le système d'exploitation **Android
 
 ---
 
-## 📦 Générer un APK
+##  Générer un APK
 
 Dans Android Studio : **Build › Build Bundle(s) / APK(s) › Build APK(s)**.
 
@@ -334,7 +334,7 @@ APK généré : `app/build/outputs/apk/debug/app-debug.apk` (à copier sur un t�
 
 ---
 
-## 🔧 Personnaliser le jeu
+##  Personnaliser le jeu
 
 | Ce que vous voulez changer | Où |
 |---|---|
@@ -348,7 +348,7 @@ APK généré : `app/build/outputs/apk/debug/app-debug.apk` (à copier sur un t�
 
 ---
 
-## 👥 Auteurs
+##  Auteurs
 
 Projet réalisé par **Khadija Bensaad**, **Safa Douma** et **Abderrahmen Attia**
 dans le cadre du mini-projet d'algorithmique.
